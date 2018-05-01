@@ -28,13 +28,13 @@
 
 ***********************************************************************/
 
-#define PRINTER_NAME "TEVO Tarantula (EasyConfig)"  // Change this to whatever you wish, or leave it as it is.
+#define PRINTER_NAME "TEVO Smas Tarantula"  // Change this to whatever you wish, or leave it as it is.
                                                     // NOTE: Whatever you put here will have " Ready..." appended to it.
 
 /**
  * Equipment options
  */
-//#define LARGE_BED
+#define LARGE_BED
 #define SDSUPPORT
 //#define CHANGE_Y_DIRECTION        // If your bed homes in the wrong direction (it should move front to back) enable this.
 //#define CHANGE_X_DIRECTION        // If your X carriage homes in the wrong direction (it should move right to left) enable this.
@@ -45,10 +45,10 @@
 //#define Z_DUAL_STEPPER_DRIVERS    // Enable this if you have dual Z stepper motors with the second stepper motor
                                     // connected to the next available E plug (usually E1)
 
-#define MOTHERBOARD BOARD_MKS_GEN_13        // Original controller board with built in stepper drivers. Works with MKS BASE 1.3, 1.4
+//#define MOTHERBOARD BOARD_MKS_GEN_13        // Original controller board with built in stepper drivers. Works with MKS BASE 1.3, 1.4
 //#define MOTHERBOARD BOARD_MKS_BASE_15       // MKS v1.5 with Allegro A4982 stepper drivers
 //#define MOTHERBOARD BOARD_MKS_BASE_HEROIC   // MKS BASE 1.0 with Heroic HR4982 stepper drivers
-//#define MOTHERBOARD BOARD_MKS_GEN_L         // Newer controller board with replacable stepper drivers
+#define MOTHERBOARD BOARD_MKS_GEN_L         // Newer controller board with replacable stepper drivers
 
 /**
  * Offset from endpoints to get nozzle to 0,0 (front/left of bed)
@@ -80,7 +80,7 @@
  * If a Z-Probe type is selected, a Bed Leveling type other than MANUAL must be selected.
  */
 //#define BLTOUCH         // ANTClabs BLTouch sensor (might also work with clones)
-//#define SN04          // Green sensor
+#define SN04          // Green sensor
 //#define INDUCTIVE_NO  // Normally open inductive sensor
 //#define INDUCTIVE_NC  // Normally closed inductive sensor
 //#define SERVO_PROBE   // Endstop switch on rotating arm. Set servo angles!
@@ -91,9 +91,9 @@
  */
 //#define TRIPOINT
 //#define LINEAR
-//#define BILINEAR
+#define BILINEAR
 //#define UBL
-#define MANUAL
+//#define MANUAL
 
 /**
  * Z-Probe offset from nozzle (https://github.com/JimBrown/MarlinTarantula/wiki/How-to-determine-your-Z-Probe-offset)
